@@ -1,7 +1,7 @@
 import {
   START_PLAYING,
   STOP_PLAYING
-} from '../constants';
+} from '../../constants';
 
 export const initialPlayerState = {
   currentSong: {},

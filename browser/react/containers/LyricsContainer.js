@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Lyrics from '../components/Lyrics';
 import axios from 'axios';
 
-import { setLyrics } from '../redux/action-creators/setLyrics';
+import { fetchLyrics } from '../redux/action-creators/setLyrics';
 import store from '../store';
 
 export default class extends Component {
@@ -59,7 +59,7 @@ export default class extends Component {
 
     render() {
         return <Lyrics
-            text={this.state.text}
+            text={this.state.lyrics.text}
             setArtist={this.handleArtistInput}
             setSong={this.handleSongInput}
             artistQuery={this.state.artistQuery}

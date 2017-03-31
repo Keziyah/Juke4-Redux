@@ -1,4 +1,6 @@
 import {SET_LYRICS} from '../../constants';
+import axios from 'axios';
+
 
 export const setLyrics = (text) => {
     return {
